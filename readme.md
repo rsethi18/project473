@@ -176,11 +176,3 @@ pip install pandas numpy scikit-learn nltk
 ```
 
 Embedding approaches also need `pip install sentence-transformers` (or `gensim` for Word2Vec/Doc2Vec).
-
-## Using AI for your part
-
-Give your AI the handout, this README, `common.py`, `approach_template.py`, and `tfidf_knn.py`. Don't give it the large CSVs. Then describe your part, for example:
-
-> Using common.py and approach_template.py, write embedding_knn.py for Approach 2 of the attached handout. Implement predict(tr, te) as KNN with cosine similarity over sentence-transformer embeddings, comparing only answers to the same question. Try two models and K in [3, 5, 7, 10, 15, 20], cache embeddings to disk, and log every setting with log_result.
-
-Run whatever it gives you and check that it prints a QWK between 0 and 1 before pushing.
